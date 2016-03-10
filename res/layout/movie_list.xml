@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    android:layout_gravity="center">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtSolid"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#999999" />
+    
+    <!-- Thumbnail Image -->
+     		<com.android.volley.toolbox.NetworkImageView
+ 		    android:id="@+id/thumbnail"
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="200dp"
+ 		    android:layout_centerHorizontal="true"
+ 		    android:layout_below="@+id/txtSolid"
+ 		    android:layout_marginTop="14dp"/>
+ 	
+        <!-- Genre -->
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" 
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genre"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" 
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="2dip"
+        android:textSize="@dimen/rating" 
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+    
+ 	<!-- Plot -->
+ 		<TextView
+        android:id="@+id/plot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/plot" 
+     	android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <!-- Release Year -->
+     <TextView
+        android:id="@+id/releaseYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plot"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/year" 
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+ 		
+ 		<TextView
+            android:id="@+id/txtbtmSolid"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#999999" />
+
+
+</RelativeLayout>
+</RelativeLayout>

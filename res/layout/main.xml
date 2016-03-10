@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtSolid"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/txtbtmSolid"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#999999" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtbtmSolid"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/footer" />
+
+        <EditText
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Title of Movie"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="92dp"
+            android:background="@drawable/btn_border"
+            android:gravity="center"
+            android:text="Search" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/movieTitle"
+            android:layout_alignLeft="@+id/movieTitle"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="Enter movie name.."
+            android:textColor="#666666" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/movieTitle"
+            android:layout_alignLeft="@+id/movieTitle"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+
+</LinearLayout>
